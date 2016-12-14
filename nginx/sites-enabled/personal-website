@@ -1,0 +1,33 @@
+server {
+    listen 80;
+    server_name 192.168.99.100;
+    charset utf-8;
+
+    root /var/www/static;
+
+    error_log /dev/stdout info;
+    access_log /dev/stdout;
+    
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}
+
+server {
+    listen 80;
+    server_name balexlandau.com www.balexlandau.com;
+    charset utf-8;
+
+    root /var/www/static;
+
+    error_log /dev/stdout info;
+    access_log /dev/stdout;
+
+    location / {
+        if ($http_x_forwarded_proto != "https") {
+            rewrite ^(.*)$ https://$server_name$1 permanent;
+            break;
+        }
+        try_files $uri $uri/ /index.html;
+    }
+}

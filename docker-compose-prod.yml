@@ -1,0 +1,16 @@
+static:
+  build: ./frontend
+  command: cp -a /placeholder/. /var/www/static/
+
+nginx:
+  restart: always
+  build: ./nginx/
+  ports:
+    - "80:80"
+  volumes_from:
+    - static
+  log_driver: "awslogs"
+  log_opt:
+    awslogs-group: "personal-website"
+    awslogs-stream: "nginx"
+
