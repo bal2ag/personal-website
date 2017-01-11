@@ -2,6 +2,13 @@ static:
   build: ./frontend
   command: cp -a /placeholder/. /var/www/static/
 
+web:
+  restart: always
+  build: ./backend
+  expose:
+    - "8000"
+  command: /usr/local/bin/gunicorn -w 4 -b :8000 app.wsgi:app
+
 nginx:
   restart: always
   build: ./nginx/
@@ -9,4 +16,6 @@ nginx:
     - "80:80"
   volumes_from:
     - static
+  links:
+    - web:web
 
