@@ -37,7 +37,7 @@
 							<div class="inner">
                                 <h1>Alex Landau</h1>
                                 <p>I'm an engineer interested in creating software that is reliable, useful, and exciting.</p></ br>
-                                <p>I'm particularly interested in <a href="https://www.python.org/">Python</a>, <a href="http://flask.pocoo.org/">Flask</a>, microservices, automation, and building software to handle incredible scale.</p>
+                                <p>I'm particularly interested in <a href="https://www.python.org/">Python</a>, <a href="http://flask.pocoo.org/">Flask</a>, microservices, automation, and thinking about distributed systems at scale.</p>
 								<ul class="icons">
 									<li><a href="https://twitter.com/balexlandau" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="https://github.com/bal2ag" class="icon fa-github"><span class="label">GitHub</span></a></li>
@@ -50,7 +50,7 @@
 						<nav>
 							<ul>
                                 <li><a href="#code">Code</a></li>
-                                <li><a href="/resume">Resume</a></li>
+                                <li><a href="/Resume_AlexLandau_20161005.pdf">Resume</a></li>
                                 <li><a href="#writing">Writing</a></li>
                                 <li><a href="#speaking">Speaking</a></li>
 								<li><a href="#me">Me</a></li>
@@ -75,6 +75,10 @@
                                 </div>
                                 <div class="open-source">
                                     <h2>Open Source</h2>
+                                    <div class="open-source-example">
+                                        <h3><a href="https://github.com/roverdotcom/dogstatsd-collector">dogstatsd-collector</a></h3>
+                                        <p>A library I wrote at Rover to enable StatsD metrics to be emitted at arbitrary granularity (instead of just the flush interval). Check out the READme for more info!</p>
+                                    </div>
                                     <div class="open-source-example">
                                         <h3><a href="https://github.com/bal2ag/cachual">Cachual</a></h3>
                                         <p>A library that allows you to cache the return values of your Python functions with a simple decorator.</p>
@@ -106,6 +110,14 @@
 							<article id="writing">
                                 <h2 class="major">Writing</h2>
                                 <div class="speaking-example">
+                                    <h3><a href="https://www.rover.com/blog/engineering/post/moving-safely-to-python-3/">Moving Safely to Python 3 (Rover Engineering Blog)</a></h3>
+                                    <p>A discussion about Rover's strategy for migrating to Python 3 (a project I'm currently leading).</p>
+                                </div>
+                                <div class="speaking-example">
+                                    <h3><a href="https://www.rover.com/blog/engineering/post/going-green-hardening-django-against-third-party-service-outages-with-gevent/">Going Green: Hardening Django Against Third Party Service Outages with gevent (Rover Engineering Blog)</a></h3>
+                                    <p>This post discusses an approach we took to prevent outages in our third party service dependencies from taking down our entire webapp.</p>
+                                </div>
+                                <div class="speaking-example">
                                     <h3><a href="https://engineering.rover.com/blog/performance/2017/09/25/django-performance-omniscience/">Query Performance Omniscience in Django (Rover Engineering Blog)</a></h3>
                                     <p>This post introduces a metrics-based approach to understanding your Django application's interaction with the underlying database, and how you can use those metrics to improve your application's performance and database utilization.</p>
                                 </div>
@@ -124,6 +136,18 @@
 							<article id="speaking">
                                 <h2 class="major">Speaking</h2>
                                 <div class="speaking-example">
+                                    <h3>Building a Culture of Observability</h3>
+                                    <h4><a href="https://us.pycon.org/2019/">PyCon 2019</a></h4>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-6Hk9rcgM94" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p>Speaker at PyCon 2019 about Rover's particular take on observability and how we've built it into our engineering culture. <a href="https://us.pycon.org/2019/schedule/presentation/211/">Talk Abstract</a></p>
+                                </div>
+                                <div class="speaking-example">
+                                    <h3>Achieving Huge Performance Wins with DataDog</h3>
+                                    <h4><a href="https://www.datadoghq.com/summit/spring19/">DataDog Summit Seattle 2019</a></h4>
+                                    <h4>Video Pending</h4>
+                                    <p>Speaker at DataDog Summit Seattle 2019, talked about some of the ways Rover used DataDog to score some big performance wins.</p>
+                                </div>
+                                <div class="speaking-example">
                                     <h3>Tips and Tricks for Building a Scalable Cloud Service</h3>
                                     <h4><a href="http://hackarizona.org/2015/">HackArizona 2015</a></h4>
                                     <a href="talks/2015_HackArizona_TechTalk.pdf"><img class="article-image" src="images/2015_HackArizona_TechTalk.png"></a>
@@ -135,11 +159,11 @@
 							<article id="me">
 								<h2 class="major">Me</h2>
                                 <span class="image main"><img src="images/me.jpg" alt="Picture of Me" /></span>
-                                <p>I'm a 25-year-old engineer living in
+                                <p>I'm an engineer living in
                                 Seattle, WA. I graduated in 2013 from the
                                 University of Virginia where I worked with <a href="https://www.cs.virginia.edu/~weimer/">Wes Weimer</a>'s research group on genetic algorithms to automatically find and fix bugs in code. While at UVA I was also a teaching assistant and tutor, and wrote a compiler for a <a href="http://www.cs.virginia.edu/~cs415/cool-manual/cool-manual.html">simple object-oriented language</a>.</p>
                                 <p>After graduating I worked at Microsoft and Amazon and lived for year in sweltering Phoenix, AZ. While in Phoenix I co-taught a high school AP Computer Science course through the wonderful <a href="https://www.tealsk12.org/">TEALS</a> program.</p>
-                                <p>Outside of software development I enjoy learning how to craft cocktails, playing my violin, going to music festivals, petting my cat, and studying movement. Currently I'm focused on boxing at the fantastic <a href="http://www.seattleboxinggym.com/">Seattle Boxing Gym</a>. In the past I practiced <a href="https://en.wikipedia.org/wiki/Capoeira">capoeira</a>, gymnastics, and weight lifting.</p>
+                                <p>Outside of software development I enjoy learning how to craft cocktails, playing violin in a metal band, going to music festivals, petting my cat, and studying movement. Currently I'm focused on boxing at the fantastic <a href="http://www.seattleboxinggym.com/">Seattle Boxing Gym</a>. In the past I practiced <a href="https://en.wikipedia.org/wiki/Capoeira">capoeira</a>, gymnastics, and weight lifting.</p>
                                 <p>I currently work as a developer at <a href="https://rover.com">Rover.com</a>.</p>
 							</article>
 
