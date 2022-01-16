@@ -1234,11 +1234,16 @@ img.article-image {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+            overflow: hidden;
 		}
 
 			#header .logo .icon:before {
 				font-size: 2rem;
 			}
+
+            #header .logo img {
+                max-width: 100%;
+            }
 
 		#header .content {
 			border-style: solid;
