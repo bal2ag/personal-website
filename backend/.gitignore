@@ -1,7 +1,0 @@
-*.pyc
-*.swp
-.Python
-bin
-lib
-include
-.DS_Store
