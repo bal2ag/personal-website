@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /Resume_AlexLandau_20161005.pdf
+Disallow: /Resume_v2.1.0_20200903.pdf
+Disallow: /Resume_v2.2.0_20210801.pdf
+Disallow: /Resume_v2.3.0_20211228.pdf
